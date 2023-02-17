@@ -3,7 +3,7 @@
 #include<time.h>
 /**
  * main - A program that prints postive, zero and negative
- * Return: 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 
 	if (n > 0)
 	{
-	printf("%d is positive\n" n);
+	printf("is positive\n");
 	}
 	else if (n == 0)
 	{
-	printf("%d is zero\n" n);
+	printf("is zero\n");
 	}
 	else
 	{
-	printf("%d is negative\n" n);
+	printf("is negative\n");
 	}
 	return (0);
 }
