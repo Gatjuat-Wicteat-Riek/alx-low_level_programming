@@ -14,6 +14,7 @@ int main(void)
 	}
 	for (lb = 'a'; lb <= 'f'; lb++)
 		putchar(lb);
-	putchar('\n')
+
+	putchar('\n');
 	return (0);
 }
