@@ -7,10 +7,19 @@
  */
 int main(void)
 {
-	char low;
+	int n = 97;
+	int b = 65;
 
-	for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
+	while (n <= 122)
+	{
+		putchar(n);
+		n++;
+	}
+	while (b <= 90)
+	{
+		putchar(b);
+		b++;
+	}
 	putchar('\n');
 	return (0);
 }
