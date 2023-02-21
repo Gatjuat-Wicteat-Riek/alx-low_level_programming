@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Prints alpha in lowercase
- * Return: Always (Success)
+ * print_alphabet - Prints alpha in lowercase
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
