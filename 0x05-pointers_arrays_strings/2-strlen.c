@@ -1,16 +1,14 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * _strlen - Prints a string and its length
  * @str: the string to be printed
  * Return: Always 0
  */
-int _strlen(char *str)
+size_t _strlen(const char *str)
 {
-	for (; *str != '\0'; str++)
-	{
-		_putchar(*str);
-	}
-	_putchar('\n');
+	size_t lenght = 0;
 
-	return (0);
+	while (*str++)
+	lenght++;
+	return (lenght);
 }
