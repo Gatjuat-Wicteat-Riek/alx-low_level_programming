@@ -5,8 +5,8 @@
  *
  * Return: address of the node where the loop starts, or NULL
  */
-	listint_t *find_listint_loop(listint_t *hdd)
-	{
+listint_t *find_listint_loop(listint_t *hdd)
+{
 	listint_t *slw = hdd;
 
 	listint_t *fst = hdd;
@@ -16,7 +16,7 @@
 	while (slw && fst && fst->next)
 	{
 	fst = fst->next->next;
-	slow = slow->next;
+	slw = slw->next;
 	if (fst == slw)
 	{
 	slw = hdd;
@@ -29,4 +29,4 @@
 	}
 	}
 	return (NULL);
-	}
+}
